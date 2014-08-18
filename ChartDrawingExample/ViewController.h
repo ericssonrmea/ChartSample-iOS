@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "CorePlot-CocoaTouch.h"
+
+
+@interface ViewController : UIViewController <CPTPlotDataSource>
+{
+   
+}
+
+@property(nonatomic, strong) CPTGraphHostingView *hostView;
+@property(nonatomic, strong) CPTTheme *selectedTheme;
+
+-(void) initPlot;
+-(void) configureHost;
+-(void) configureGraph;
+-(void) configurePlots;
+-(void) configureAxes;
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77089C33199B3AE600F1E162 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77089C30199B3AC400F1E162 /* libCorePlot-CocoaTouch.a */; };
+		77089C35199B5E6000F1E162 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E0BF36199B283A009875AA /* QuartzCore.framework */; };
+		77089C36199B5E6900F1E162 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E0BF38199B284B009875AA /* Accelerate.framework */; };
+		7762D51119A1E99300394C0F /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7762D51019A1E99300394C0F /* cities.plist */; };
 		77BB531719936B7B0080D5A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BB531619936B7B0080D5A8 /* Foundation.framework */; };
 		77BB531919936B7B0080D5A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BB531819936B7B0080D5A8 /* CoreGraphics.framework */; };
 		77BB531B19936B7B0080D5A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BB531A19936B7B0080D5A8 /* UIKit.framework */; };
@@ -25,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		77089C2F199B3AC400F1E162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77089C29199B3AC400F1E162 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		77089C31199B3ADE00F1E162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77089C29199B3AC400F1E162 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
 		77BB533C19936B7B0080D5A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 77BB530B19936B7B0080D5A8 /* Project object */;
@@ -35,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77089C29199B3AC400F1E162 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../core-plot-master/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		7762D51019A1E99300394C0F /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		77BB531319936B7B0080D5A8 /* ChartDrawingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartDrawingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BB531619936B7B0080D5A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		77BB531819936B7B0080D5A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +75,8 @@
 		77BB534019936B7B0080D5A8 /* ChartDrawingExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChartDrawingExampleTests-Info.plist"; sourceTree = "<group>"; };
 		77BB534219936B7B0080D5A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77BB534419936B7B0080D5A8 /* ChartDrawingExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDrawingExampleTests.m; sourceTree = "<group>"; };
+		77E0BF36199B283A009875AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		77E0BF38199B284B009875AA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77089C36199B5E6900F1E162 /* Accelerate.framework in Frameworks */,
+				77089C35199B5E6000F1E162 /* QuartzCore.framework in Frameworks */,
+				77089C33199B3AE600F1E162 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				77BB531919936B7B0080D5A8 /* CoreGraphics.framework in Frameworks */,
 				77BB531B19936B7B0080D5A8 /* UIKit.framework in Frameworks */,
 				77BB531719936B7B0080D5A8 /* Foundation.framework in Frameworks */,
@@ -81,9 +106,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77089C2A199B3AC400F1E162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77089C30199B3AC400F1E162 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		77BB530A19936B7B0080D5A8 = {
 			isa = PBXGroup;
 			children = (
+				77089C29199B3AC400F1E162 /* CorePlot-CocoaTouch.xcodeproj */,
 				77BB531C19936B7B0080D5A8 /* ChartDrawingExample */,
 				77BB533E19936B7B0080D5A8 /* ChartDrawingExampleTests */,
 				77BB531519936B7B0080D5A8 /* Frameworks */,
@@ -103,6 +137,8 @@
 		77BB531519936B7B0080D5A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77E0BF38199B284B009875AA /* Accelerate.framework */,
+				77E0BF36199B283A009875AA /* QuartzCore.framework */,
 				77BB531619936B7B0080D5A8 /* Foundation.framework */,
 				77BB531819936B7B0080D5A8 /* CoreGraphics.framework */,
 				77BB531A19936B7B0080D5A8 /* UIKit.framework */,
@@ -133,6 +169,7 @@
 				77BB531F19936B7B0080D5A8 /* InfoPlist.strings */,
 				77BB532219936B7B0080D5A8 /* main.m */,
 				77BB532419936B7B0080D5A8 /* ChartDrawingExample-Prefix.pch */,
+				7762D51019A1E99300394C0F /* cities.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,6 +206,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				77089C32199B3ADE00F1E162 /* PBXTargetDependency */,
 			);
 			name = ChartDrawingExample;
 			productName = ChartDrawingExample;
@@ -218,6 +256,12 @@
 			mainGroup = 77BB530A19936B7B0080D5A8;
 			productRefGroup = 77BB531419936B7B0080D5A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 77089C2A199B3AC400F1E162 /* Products */;
+					ProjectRef = 77089C29199B3AC400F1E162 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				77BB531219936B7B0080D5A8 /* ChartDrawingExample */,
@@ -226,12 +270,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		77089C30199B3AC400F1E162 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 77089C2F199B3AC400F1E162 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		77BB531119936B7B0080D5A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				77BB532D19936B7B0080D5A8 /* Main_iPad.storyboard in Resources */,
+				7762D51119A1E99300394C0F /* cities.plist in Resources */,
 				77BB533219936B7B0080D5A8 /* Images.xcassets in Resources */,
 				77BB532A19936B7B0080D5A8 /* Main_iPhone.storyboard in Resources */,
 				77BB532119936B7B0080D5A8 /* InfoPlist.strings in Resources */,
@@ -270,6 +325,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		77089C32199B3ADE00F1E162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 77089C31199B3ADE00F1E162 /* PBXContainerItemProxy */;
+		};
 		77BB533D19936B7B0080D5A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 77BB531219936B7B0080D5A8 /* ChartDrawingExample */;
@@ -392,8 +452,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartDrawingExample/ChartDrawingExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "ChartDrawingExample/ChartDrawingExample-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../core-plot-master/framework\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,8 +471,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartDrawingExample/ChartDrawingExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "ChartDrawingExample/ChartDrawingExample-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../core-plot-master/framework\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +542,7 @@
 				77BB534A19936B7C0080D5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77BB534B19936B7C0080D5A8 /* Build configuration list for PBXNativeTarget "ChartDrawingExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +551,7 @@
 				77BB534D19936B7C0080D5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Izmir</key>
+	<string>http://api.openweathermap.org/data/2.5/weather?q=Izmir&amp;mode=json&amp;units=metric</string>
+	<key>Cape Town</key>
+	<string>http://api.openweathermap.org/data/2.5/weather?q=Cape%20Town&amp;mode=json&amp;units=metric</string>
+	<key>London</key>
+	<string>http://api.openweathermap.org/data/2.5/weather?q=London&amp;mode=json&amp;units=metric</string>
+	<key>Melbourne</key>
+	<string>http://api.openweathermap.org/data/2.5/weather?q=Melbourne&amp;mode=json&amp;units=metric</string>
+	<key>New York</key>
+	<string>http://api.openweathermap.org/data/2.5/weather?q=New%20York&amp;mode=json&amp;units=metric</string>
+</dict>
+</plist>
