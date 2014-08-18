@@ -36,8 +36,6 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"cities" ofType:@"plist"];
     
-    urls = [NSMutableArray arrayWithContentsOfFile:path];
-    
     NSDictionary *dict=[NSMutableDictionary dictionaryWithContentsOfFile:path];
     
     urls=[dict allValues];
