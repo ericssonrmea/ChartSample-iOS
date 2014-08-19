@@ -69,7 +69,7 @@
   
     NSDictionary *results = parsedObject[@"main"];
     NSNumber *value=[NSNumber numberWithInt:[results[@"temp"] integerValue]];
-    NSLog(@"Value %d: %@",currentIndex,value);
+   
     [values addObject:value];
     
     if (currentIndex<[urls count])
@@ -166,10 +166,10 @@
     
     plotSpace.yRange=yRange;
     
-    CPTMutableLineStyle *googLineStyle = [plot.dataLineStyle mutableCopy];
-    googLineStyle.lineWidth = 1.5;
-    googLineStyle.lineColor = plotColor;
-    plot.dataLineStyle = googLineStyle;
+    CPTMutableLineStyle *plotLineStyle = [plot.dataLineStyle mutableCopy];
+    plotLineStyle.lineWidth = 1.5;
+    plotLineStyle.lineColor = plotColor;
+    plot.dataLineStyle = plotLineStyle;
     CPTMutableLineStyle *googSymbolLineStyle = [CPTMutableLineStyle lineStyle];
     googSymbolLineStyle.lineColor = plotColor;
     CPTPlotSymbol *googSymbol = [CPTPlotSymbol starPlotSymbol];
@@ -269,12 +269,11 @@
     y.majorTickLength = 4.0f;
     y.minorTickLength = 2.0f;
     y.tickDirection = CPTSignPositive;
-    
-    
+ 
     
     NSInteger majorIncrement = 2;
     NSInteger minorIncrement = 2;
-    CGFloat yMax = 30.0f;
+    CGFloat yMax = 40.0f;
     NSMutableSet *yLabels = [NSMutableSet set];
     NSMutableSet *yMajorLocations = [NSMutableSet set];
     NSMutableSet *yMinorLocations = [NSMutableSet set];
